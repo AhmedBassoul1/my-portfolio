@@ -8,8 +8,7 @@
 
 ## 🔗 Live Demo
 
-**[ahmedbassoul.github.io](https://ahmedbassoul.github.io)**
-*(Update this link once deployed)*
+**[ahmedbassoul1.github.io/my-portfolio/](https://ahmedbassoul1.github.io/my-portfolio/)**
 
 ---
 
