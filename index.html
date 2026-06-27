@@ -1,412 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ahmed Bassoul — Data Scientist & ML Engineer</title>
-<meta name="description" content="Portfolio of Ahmed Bassoul — Data Scientist and Machine Learning Engineer based in Casablanca. Specialized in LLMs, RAG pipelines, and AI agents." />
-
-<meta property="og:title" content="Ahmed Bassoul — Data Scientist & ML Engineer" />
-<meta property="og:description" content="Building AI agents, RAG systems, and intelligent workflows." />
-<meta property="og:type" content="website" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&family=Söhne:wght@400;500&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Bassoul — Data Scientist & ML Engineer</title>
+  <meta name="description" content="Portfolio of Ahmed Bassoul — Data Scientist & Machine Learning Engineer based in Casablanca. LLMs, RAG pipelines, and AI agents." />
+  <meta property="og:title" content="Ahmed Bassoul — Data Scientist & ML Engineer" />
+  <meta property="og:description" content="Building AI agents, RAG systems, and intelligent workflows." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Paper grain -->
-<div class="grain" aria-hidden="true"></div>
+  <!-- Ambient glow -->
+  <div class="aurora" aria-hidden="true"></div>
 
-<!-- Top bar -->
-<header class="topbar">
-  <div class="topbar-inner">
-    <a href="#top" class="brand">
-      <span class="brand-mark">Ahmed Bassoul</span>
-      <span class="brand-sub">Index №26 · Vol. III</span>
-    </a>
-    <nav class="topnav">
-      <a href="#work"><span class="n">01</span>Work</a>
-      <a href="#projects"><span class="n">02</span>Projects</a>
-      <a href="#about"><span class="n">03</span>About</a>
-      <a href="#stack"><span class="n">04</span>Stack</a>
-      <a href="#contact"><span class="n">05</span>Contact</a>
-    </nav>
-    <div class="topbar-meta">
-      <span class="pulse"></span>
-      <span>Available · 2026</span>
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">
+        <span class="logo-dot"></span>
+        Ahmed Bassoul
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#freelance">Freelance</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="ic-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="ic-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <a href="#contact" class="btn-sm">Hire me</a>
+      </div>
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu"><span></span><span></span></button>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- HERO / MASTHEAD -->
-<section class="masthead" id="top">
-  <div class="masthead-grid">
-    <div class="mast-eyebrow">
-      <span>Casablanca, Morocco</span>
-      <span class="rule"></span>
-      <span>Portfolio · MMXXVI</span>
-    </div>
-
-    <h1 class="mast-title">
-      <span class="mt-1">Data&nbsp;Scientist</span>
-      <span class="mt-amp"><em>&amp;</em></span>
-      <span class="mt-2">Machine&nbsp;Learning</span>
-      <span class="mt-3"><em>Engineer.</em></span>
-    </h1>
-
-    <div class="mast-foot">
-      <p class="mast-lede">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-inner reveal">
+      <span class="badge"><span class="pulse"></span>Open to work · Freelance & Full-time</span>
+      <h1 class="hero-title">
+        Data Scientist <span class="amp">&amp;</span><br />
+        <span class="grad">Machine Learning Engineer</span>
+      </h1>
+      <p class="hero-lede">
         I build autonomous agents, retrieval-augmented systems, and AI-driven workflows
         that turn unstructured chaos into reliable, production-grade behavior.
       </p>
-
-      <div class="mast-actions">
-        <a href="#work" class="btn-primary">
-          See selected work
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      <div class="hero-actions">
+        <a href="#freelance" class="btn-primary">
+          View freelance work
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
         <a href="#contact" class="btn-ghost">Get in touch</a>
       </div>
+      <div class="hero-meta">
+        <div><span class="hm-k">Based in</span><span class="hm-v">Casablanca, MA</span></div>
+        <div><span class="hm-k">Focus</span><span class="hm-v">LLMs · RAG · Agents</span></div>
+        <div><span class="hm-k">Education</span><span class="hm-v">M2SI · INSEA Rabat</span></div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Decorative spec sheet -->
-  <aside class="spec">
-    <div class="spec-row"><span class="k">Discipline</span><span class="v">AI · ML · Data</span></div>
-    <div class="spec-row"><span class="k">Based in</span><span class="v">Casablanca, MA</span></div>
-    <div class="spec-row"><span class="k">Education</span><span class="v">M2SI · INSEA Rabat</span></div>
-    <div class="spec-row"><span class="k">Currently</span><span class="v">AI Agents @ Mendo</span></div>
-    <div class="spec-row"><span class="k">Status</span><span class="v"><span class="dot-live"></span>Open to projects</span></div>
-  </aside>
-
-  <!-- Big rule -->
-  <div class="big-rule"></div>
-
-  <!-- Marquee -->
+  <!-- MARQUEE -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>LLMs</span><span>✦</span><span>RAG</span><span>✦</span><span>Vector Databases</span><span>✦</span><span>LangChain</span><span>✦</span><span>n8n</span><span>✦</span><span>PyTorch</span><span>✦</span><span>Computer Vision</span><span>✦</span><span>ELK Stack</span><span>✦</span><span>Business Intelligence</span><span>✦</span>
-      <span>LLMs</span><span>✦</span><span>RAG</span><span>✦</span><span>Vector Databases</span><span>✦</span><span>LangChain</span><span>✦</span><span>n8n</span><span>✦</span><span>PyTorch</span><span>✦</span><span>Computer Vision</span><span>✦</span><span>ELK Stack</span><span>✦</span><span>Business Intelligence</span><span>✦</span>
+      <span>LLMs</span><i>•</i><span>RAG</span><i>•</i><span>Vector Databases</span><i>•</i><span>LangChain</span><i>•</i><span>n8n</span><i>•</i><span>PyTorch</span><i>•</i><span>Computer Vision</span><i>•</i><span>ELK Stack</span><i>•</i><span>Business Intelligence</span><i>•</i>
+      <span>LLMs</span><i>•</i><span>RAG</span><i>•</i><span>Vector Databases</span><i>•</i><span>LangChain</span><i>•</i><span>n8n</span><i>•</i><span>PyTorch</span><i>•</i><span>Computer Vision</span><i>•</i><span>ELK Stack</span><i>•</i><span>Business Intelligence</span><i>•</i>
     </div>
   </div>
-</section>
 
-<!-- WORK -->
-<section class="section" id="work">
-  <header class="sec-head">
-    <div class="sec-num">№ 01</div>
-    <div class="sec-titleblock">
-      <h2 class="sec-title">Selected <em>work.</em></h2>
-      <p class="sec-lede">Real systems, real problems — where I've spent my hours.</p>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="sec-head reveal">
+      <span class="sec-label">01 / About</span>
+      <h2 class="sec-title">A bit about me</h2>
     </div>
-  </header>
-
-  <div class="work-list">
-
-    <article class="work-row">
-      <div class="wr-side">
-        <div class="wr-year">2025—2026</div>
-        <div class="wr-tag">Freelance · AI Engineering</div>
-      </div>
-      <div class="wr-body">
-        <h3 class="wr-title">AI Agent Developer <span class="wr-org">— Mendo</span></h3>
-        <p class="wr-desc">
-          Designing and shipping intelligent autonomous agents and AI-driven workflows for
-          production environments — where reliability matters more than demos.
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="lead">
+          I trained as a mathematician, fell for machine learning, and now spend my days
+          teaching machines to read, retrieve, and reason.
         </p>
-        <ul class="wr-points">
-          <li><span class="bullet">→</span>Engineered multi-agent automated workflows in <strong>n8n</strong> for complex, branching task execution.</li>
-          <li><span class="bullet">→</span>Built and fine-tuned custom ML models and embeddings using <strong>PyTorch</strong>.</li>
-          <li><span class="bullet">→</span>Integrated <strong>LLMs</strong> with <strong>LangChain</strong> and <strong>LlamaIndex</strong>.</li>
-          <li><span class="bullet">→</span>Developed <strong>RAG pipelines</strong> on <strong>Pinecone</strong> and <strong>ChromaDB</strong>.</li>
-          <li><span class="bullet">→</span>Connected agents to external APIs and enterprise tools to automate business processes end-to-end.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="work-row">
-      <div class="wr-side">
-        <div class="wr-year">2025</div>
-        <div class="wr-tag">Internship · Business Intelligence</div>
-      </div>
-      <div class="wr-body">
-        <h3 class="wr-title">BI Analyst <span class="wr-org">— AGH Data Agency Holding</span></h3>
-        <p class="wr-desc">
-          BI project for a mobile recipe application — translating market signals into
-          product strategy and a clear go-to-market plan.
+        <p>
+          I hold a Master's in Information Systems &amp; Intelligent Systems from
+          <strong>INSEA Rabat</strong>, on top of a Bachelor's in Mathematics &amp;
+          Computer Science from <strong>FSDM Fez</strong>. I've worked across cybersecurity AI,
+          business intelligence, and applied LLM engineering — happiest at the intersection of
+          rigorous data work and practical product thinking.
         </p>
-        <ul class="wr-points">
-          <li><span class="bullet">→</span>Conducted market analysis and competitive benchmarking of similar applications.</li>
-          <li><span class="bullet">→</span>Performed user research and segmentation to define target personas.</li>
-          <li><span class="bullet">→</span>Defined and prioritized product features based on business needs.</li>
-          <li><span class="bullet">→</span>Forecasted growth potential and synthesized everything into a BI report for marketing &amp; strategy.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="work-row">
-      <div class="wr-side">
-        <div class="wr-year">2024</div>
-        <div class="wr-tag">Final-Year Internship · Cybersecurity AI</div>
-      </div>
-      <div class="wr-body">
-        <h3 class="wr-title">UBA Engineer <span class="wr-org">— DataProtect</span></h3>
-        <p class="wr-desc">
-          Behavioral anomaly detection for proactive threat hunting — combining classical
-          ML, the ELK Stack, and an LLM in the loop.
+        <p>
+          Right now I'm freelancing as an AI Agent Developer, building production agent systems
+          for clients who care about reliability over theatrics.
         </p>
-        <ul class="wr-points">
-          <li><span class="bullet">→</span>Developed a <strong>User Behavior Analytics (UBA)</strong> model for proactive threat detection.</li>
-          <li><span class="bullet">→</span>Built a log collection &amp; analysis pipeline on the <strong>ELK Stack</strong> (Elasticsearch, Logstash, Kibana).</li>
-          <li><span class="bullet">→</span>Trained and integrated an <strong>LLM</strong> to identify subtle behavioral deviations.</li>
-          <li><span class="bullet">→</span><strong>Outcome:</strong> improved detection coverage, reduced false positives.</li>
-        </ul>
       </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section class="section section-projects" id="projects">
-  <header class="sec-head">
-    <div class="sec-num">№ 02</div>
-    <div class="sec-titleblock">
-      <h2 class="sec-title">Lab <em>notebook.</em></h2>
-      <p class="sec-lede">Things I built to learn — and to ship.</p>
+      <aside class="about-cards reveal">
+        <div class="card">
+          <h4>Education</h4>
+          <ul class="mini-list">
+            <li><span class="yr">2023–25</span><span><strong>Master M2SI</strong><br/><em>INSEA, Rabat</em></span></li>
+            <li><span class="yr">2020–23</span><span><strong>Bachelor SMI</strong><br/><em>FSDM, Fez</em></span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Certifications</h4>
+          <ul class="mini-list">
+            <li><span class="yr">2024</span><span><strong>ML Specialization</strong><br/><em>Stanford</em></span></li>
+            <li><span class="yr">2024</span><span><strong>Data Analytics</strong><br/><em>Google</em></span></li>
+          </ul>
+        </div>
+      </aside>
     </div>
-  </header>
+  </section>
 
-  <div class="proj-grid">
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="sec-head reveal">
+      <span class="sec-label">02 / Experience</span>
+      <h2 class="sec-title">Selected work</h2>
+    </div>
+    <div class="timeline">
+      <article class="exp reveal">
+        <div class="exp-time"><span class="exp-year">2025—2026</span><span class="exp-kind">Freelance · AI Engineering</span></div>
+        <div class="exp-body">
+          <h3>AI Agent Developer <span class="org">— Mendo</span></h3>
+          <p>Designing and shipping intelligent autonomous agents and AI-driven workflows for production environments — where reliability matters more than demos.</p>
+          <ul>
+            <li>Engineered multi-agent automated workflows in <strong>n8n</strong> for complex, branching task execution.</li>
+            <li>Built and fine-tuned custom ML models and embeddings using <strong>PyTorch</strong>.</li>
+            <li>Integrated <strong>LLMs</strong> with <strong>LangChain</strong> and <strong>LlamaIndex</strong>.</li>
+            <li>Developed <strong>RAG pipelines</strong> on <strong>Pinecone</strong> and <strong>ChromaDB</strong>.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="exp reveal">
+        <div class="exp-time"><span class="exp-year">2025</span><span class="exp-kind">Internship · Business Intelligence</span></div>
+        <div class="exp-body">
+          <h3>BI Analyst <span class="org">— AGH Data Agency Holding</span></h3>
+          <p>BI project for a mobile recipe application — translating market signals into product strategy and a clear go-to-market plan.</p>
+          <ul>
+            <li>Market analysis and competitive benchmarking of similar applications.</li>
+            <li>User research and segmentation to define target personas.</li>
+            <li>Forecasted growth and synthesized a BI report for marketing &amp; strategy.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="exp reveal">
+        <div class="exp-time"><span class="exp-year">2024</span><span class="exp-kind">Final-Year Internship · Cybersecurity AI</span></div>
+        <div class="exp-body">
+          <h3>UBA Engineer <span class="org">— DataProtect</span></h3>
+          <p>Behavioral anomaly detection for proactive threat hunting — combining classical ML, the ELK Stack, and an LLM in the loop.</p>
+          <ul>
+            <li>Developed a <strong>User Behavior Analytics (UBA)</strong> model for proactive threat detection.</li>
+            <li>Built a log pipeline on the <strong>ELK Stack</strong> (Elasticsearch, Logstash, Kibana).</li>
+            <li>Trained an <strong>LLM</strong> to flag subtle behavioral deviations — improved coverage, fewer false positives.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <article class="proj">
-      <div class="proj-head">
-        <span class="proj-no">01</span>
-        <span class="proj-line"></span>
+  <!-- FREELANCE PROJECTS (NEW) -->
+  <section class="section" id="freelance">
+    <div class="sec-head reveal">
+      <span class="sec-label">03 / Freelance projects</span>
+      <h2 class="sec-title">Shipped for clients &amp; users</h2>
+      <p class="sec-lede">Real products — full stack, from data pipeline to UI.</p>
+    </div>
+    <div class="fl-grid">
+
+      <article class="fl-card reveal">
+        <div class="fl-top">
+          <div class="fl-icon">🛡️</div>
+          <a class="fl-repo" href="https://github.com/AhmedBassoul1/Emotif" target="_blank" rel="noopener" aria-label="View SafeKids on GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.4-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          </a>
+        </div>
+        <h3 class="fl-title">SafeKids — Child-Safety Extension</h3>
+        <p class="fl-desc">
+          A Chrome extension + FastAPI backend that scans children's messages in real time,
+          classifies them with a <strong>local LLM</strong> (Ollama / llama3.2) across 10 safety
+          categories, scores risk 0–100, and emails parents on dangerous content. 100% on-device — no cloud AI.
+        </p>
+        <div class="tags"><span>Chrome MV3</span><span>FastAPI</span><span>Ollama</span><span>LLM</span><span>SQLite</span></div>
+        <a class="fl-link" href="https://github.com/AhmedBassoul1/Emotif" target="_blank" rel="noopener">View on GitHub <span>↗</span></a>
+      </article>
+
+      <article class="fl-card reveal">
+        <div class="fl-top">
+          <div class="fl-icon">🎬</div>
+          <a class="fl-repo" href="https://github.com/AhmedBassoul1/youtube_download" target="_blank" rel="noopener" aria-label="View YouTube Downloader on GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.4-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          </a>
+        </div>
+        <h3 class="fl-title">YouTube Downloader</h3>
+        <p class="fl-desc">
+          A modern video &amp; audio downloader with a glassmorphic web UI and a <strong>FastAPI</strong>
+          backend powered by <strong>yt-dlp</strong>. Multi-quality (up to 4K), MP3 extraction,
+          selective playlist downloading, async background jobs, and desktop notifications.
+        </p>
+        <div class="tags"><span>Python</span><span>FastAPI</span><span>yt-dlp</span><span>FFmpeg</span><span>Async</span></div>
+        <a class="fl-link" href="https://github.com/AhmedBassoul1/youtube_download" target="_blank" rel="noopener">View on GitHub <span>↗</span></a>
+      </article>
+
+      <article class="fl-card reveal">
+        <div class="fl-top">
+          <div class="fl-icon">📚</div>
+          <a class="fl-repo" href="https://github.com/AhmedBassoul1/RAG" target="_blank" rel="noopener" aria-label="View RAG project on GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.4-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          </a>
+        </div>
+        <h3 class="fl-title">Historical RAG — WWII Q&amp;A</h3>
+        <p class="fl-desc">
+          A full <strong>Retrieval-Augmented Generation</strong> system answering questions on WWII
+          over two knowledge bases (history books &amp; military personnel). Semantic search with
+          <strong>SentenceTransformers</strong> (mpnet), a local <strong>Ollama</strong> LLM (deepseek-r1),
+          and a Flask UI. PDF ingestion via PyMuPDF, Camelot &amp; spaCy.
+        </p>
+        <div class="tags"><span>RAG</span><span>Flask</span><span>Sentence-Transformers</span><span>Ollama</span><span>PyTorch</span></div>
+        <a class="fl-link" href="https://github.com/AhmedBassoul1/RAG" target="_blank" rel="noopener">View on GitHub <span>↗</span></a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- LAB PROJECTS -->
+  <section class="section" id="projects">
+    <div class="sec-head reveal">
+      <span class="sec-label">04 / Lab notebook</span>
+      <h2 class="sec-title">Things I built to learn</h2>
+    </div>
+    <div class="proj-grid">
+      <article class="proj reveal">
+        <div class="tags"><span>ViT</span><span>GPT-2</span><span>PyTorch</span><span>COCO</span></div>
+        <h3>Image Caption Generation</h3>
+        <p>Encoder-decoder pipeline using a Vision Transformer for visual features and GPT-2 for text generation. Trained on COCO to produce accurate, contextual descriptions.</p>
+      </article>
+      <article class="proj reveal">
+        <div class="tags"><span>LLM</span><span>OCR</span><span>Prompt Eng.</span></div>
+        <h3>Invoice Information Extraction</h3>
+        <p>Automated extraction of structured fields — supplier, amount, date — from messy PDFs and scanned invoices. Combines OCR with engineered prompts for high precision without fine-tuning.</p>
+      </article>
+      <article class="proj reveal">
+        <div class="tags"><span>RAG</span><span>Pinecone</span><span>LangChain</span></div>
+        <h3>Production RAG Pipelines</h3>
+        <p>Chunking strategies, hybrid search, reranking, citation tracking. Vector stores on Pinecone &amp; ChromaDB, orchestration via LangChain and LlamaIndex.</p>
+      </article>
+      <article class="proj reveal">
+        <div class="tags"><span>n8n</span><span>Agents</span><span>Automation</span></div>
+        <h3>Multi-Agent Workflows</h3>
+        <p>Branching, conditional, self-correcting agent flows wired through n8n — connecting LLMs to internal tools, REST APIs, and databases for real business automation.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <div class="sec-head reveal">
+      <span class="sec-label">05 / Stack</span>
+      <h2 class="sec-title">Tools I reach for</h2>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-block reveal"><h4>Languages</h4><p>Python <em>(expert)</em>, R, Java, C, SQL, JavaScript</p></div>
+      <div class="stack-block reveal"><h4>ML &amp; Deep Learning</h4><p>PyTorch, TensorFlow, Scikit-learn, Transformers, ViT, Pandas, NumPy</p></div>
+      <div class="stack-block reveal"><h4>LLMs &amp; Agents</h4><p>LangChain, LlamaIndex, RAG, Prompt Engineering, OpenAI / Anthropic APIs</p></div>
+      <div class="stack-block reveal"><h4>Data &amp; Pipelines</h4><p>Apache Airflow, n8n, Talend, ELK Stack, SIEM</p></div>
+      <div class="stack-block reveal"><h4>Databases</h4><p>MySQL, Oracle, PL/SQL, ChromaDB, Pinecone</p></div>
+      <div class="stack-block reveal"><h4>BI &amp; Analytics</h4><p>Power BI, segmentation, benchmarking, forecasting</p></div>
+      <div class="stack-block reveal"><h4>Web &amp; APIs</h4><p>FastAPI, Flask, PHP, Laravel, HTML, CSS, JS, REST</p></div>
+      <div class="stack-block reveal accent"><h4>Currently exploring</h4><p>Multi-agent orchestration, evaluation frameworks, on-device LLMs</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact-inner reveal">
+      <span class="sec-label">06 / Contact</span>
+      <h2 class="contact-title">Let's build something good</h2>
+      <p class="contact-lede">Open to freelance contracts, full-time roles, and collaborations around LLMs, AI agents, and data systems.</p>
+      <div class="contact-links">
+        <a href="mailto:bassoulahmed@gmail.com" class="cl"><span class="cl-l">Email</span><span class="cl-v">bassoulahmed@gmail.com</span><span class="cl-a">↗</span></a>
+        <a href="https://www.linkedin.com/in/ahmed-bassoul" class="cl" target="_blank" rel="noopener"><span class="cl-l">LinkedIn</span><span class="cl-v">/in/ahmed-bassoul</span><span class="cl-a">↗</span></a>
+        <a href="https://github.com/AhmedBassoul1" class="cl" target="_blank" rel="noopener"><span class="cl-l">GitHub</span><span class="cl-v">@AhmedBassoul1</span><span class="cl-a">↗</span></a>
+        <a href="tel:+212770805909" class="cl"><span class="cl-l">Phone</span><span class="cl-v">+212 770 805 909</span><span class="cl-a">↗</span></a>
       </div>
-      <div class="proj-tags"><span>ViT</span><span>GPT-2</span><span>PyTorch</span><span>COCO</span></div>
-      <h3 class="proj-title">Image Caption <em>Generation</em></h3>
-      <p class="proj-desc">
-        An encoder-decoder pipeline using a Vision Transformer for visual feature extraction
-        and GPT-2 for text generation. Trained on COCO, it produces accurate, contextual
-        descriptions of arbitrary images.
-      </p>
-    </article>
-
-    <article class="proj">
-      <div class="proj-head">
-        <span class="proj-no">02</span>
-        <span class="proj-line"></span>
-      </div>
-      <div class="proj-tags"><span>LLM</span><span>OCR</span><span>Prompt Eng.</span></div>
-      <h3 class="proj-title">Invoice Information <em>Extraction</em></h3>
-      <p class="proj-desc">
-        Automated extraction of structured fields — supplier, amount, date — from messy PDF
-        and scanned invoices. Combines OCR with carefully engineered prompts to reach high
-        precision without fine-tuning.
-      </p>
-    </article>
-
-    <article class="proj">
-      <div class="proj-head">
-        <span class="proj-no">03</span>
-        <span class="proj-line"></span>
-      </div>
-      <div class="proj-tags"><span>RAG</span><span>Pinecone</span><span>LangChain</span></div>
-      <h3 class="proj-title">RAG <em>Pipelines</em></h3>
-      <p class="proj-desc">
-        Production retrieval-augmented generation pipelines: chunking strategies, hybrid
-        search, reranking, citation tracking. Vector stores on Pinecone &amp; ChromaDB,
-        orchestration via LangChain and LlamaIndex.
-      </p>
-    </article>
-
-    <article class="proj">
-      <div class="proj-head">
-        <span class="proj-no">04</span>
-        <span class="proj-line"></span>
-      </div>
-      <div class="proj-tags"><span>n8n</span><span>Agents</span><span>Automation</span></div>
-      <h3 class="proj-title">Multi-Agent <em>Workflows</em></h3>
-      <p class="proj-desc">
-        Branching, conditional, and self-correcting agent flows wired through n8n —
-        connecting LLMs to internal tools, REST APIs, and databases for genuine business
-        automation.
-      </p>
-    </article>
-
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section section-about" id="about">
-  <header class="sec-head">
-    <div class="sec-num">№ 03</div>
-    <div class="sec-titleblock">
-      <h2 class="sec-title">A bit <em>about</em> me.</h2>
     </div>
-  </header>
+  </section>
 
-  <div class="about-grid">
-    <div class="about-text">
-      <p class="about-lead">
-        I trained as a mathematician, fell for machine learning, and now spend my days
-        teaching machines to read, retrieve, and reason.
-      </p>
-      <p>
-        I hold a Master's in Information Systems &amp; Intelligent Systems from <strong>INSEA Rabat</strong>,
-        on top of a Bachelor's in Mathematics &amp; Computer Science from <strong>FSDM Fez</strong>.
-        I've worked across cybersecurity AI, business intelligence, and applied LLM
-        engineering — and I'm happiest at the intersection of <em>rigorous data work</em>
-        and <em>practical product thinking</em>.
-      </p>
-      <p>
-        Right now I'm freelancing as an AI Agent Developer, building production agent
-        systems for clients who care about reliability over theatrics.
-      </p>
-      <div class="signature">
-        <span class="sig-line">— Ahmed</span>
-        <span class="sig-loc">Casablanca · 2026</span>
-      </div>
-    </div>
+  <footer class="footer">
+    <span>© 2026 Ahmed Bassoul</span>
+    <span>Casablanca, Morocco</span>
+    <span>Built with HTML · CSS · JS</span>
+  </footer>
 
-    <aside class="about-side">
-      <div class="card-edu">
-        <h4>Education</h4>
-        <ul>
-          <li>
-            <span class="edu-year">2023—25</span>
-            <span class="edu-line"><strong>Master M2SI</strong><br/><span class="edu-org">INSEA, Rabat</span></span>
-          </li>
-          <li>
-            <span class="edu-year">2020—23</span>
-            <span class="edu-line"><strong>Bachelor SMI</strong><br/><span class="edu-org">FSDM, Fez</span></span>
-          </li>
-        </ul>
-      </div>
-      <div class="card-edu">
-        <h4>Certifications</h4>
-        <ul>
-          <li>
-            <span class="edu-year">2024</span>
-            <span class="edu-line"><strong>Machine Learning Specialization</strong><br/><span class="edu-org">Stanford</span></span>
-          </li>
-          <li>
-            <span class="edu-year">2024</span>
-            <span class="edu-line"><strong>Data Analytics</strong><br/><span class="edu-org">Google</span></span>
-          </li>
-        </ul>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<!-- STACK -->
-<section class="section section-stack" id="stack">
-  <header class="sec-head">
-    <div class="sec-num">№ 04</div>
-    <div class="sec-titleblock">
-      <h2 class="sec-title">The <em>stack.</em></h2>
-      <p class="sec-lede">Tools I reach for, organized by what they actually do.</p>
-    </div>
-  </header>
-
-  <div class="stack-grid">
-    <div class="stack-block">
-      <div class="sb-no">i.</div>
-      <h4>Languages</h4>
-      <p>Python <em>(expert)</em>, R, Java, C, SQL, JavaScript</p>
-    </div>
-    <div class="stack-block">
-      <div class="sb-no">ii.</div>
-      <h4>ML &amp; Deep Learning</h4>
-      <p>PyTorch, TensorFlow, Scikit-learn, Transformers, ViT, Pandas, NumPy</p>
-    </div>
-    <div class="stack-block">
-      <div class="sb-no">iii.</div>
-      <h4>LLMs &amp; Agents</h4>
-      <p>LangChain, LlamaIndex, RAG, Prompt Engineering, OpenAI / Anthropic APIs</p>
-    </div>
-    <div class="stack-block">
-      <div class="sb-no">iv.</div>
-      <h4>Data &amp; Pipelines</h4>
-      <p>Apache Airflow, n8n, Talend, ELK Stack, SIEM</p>
-    </div>
-    <div class="stack-block">
-      <div class="sb-no">v.</div>
-      <h4>Databases</h4>
-      <p>MySQL, Oracle, PL/SQL, ChromaDB, Pinecone</p>
-    </div>
-    <div class="stack-block">
-      <div class="sb-no">vi.</div>
-      <h4>BI &amp; Analytics</h4>
-      <p>Power BI, Google Trends, segmentation, benchmarking, forecasting</p>
-    </div>
-    <div class="stack-block">
-      <div class="sb-no">vii.</div>
-      <h4>Web &amp; APIs</h4>
-      <p>PHP, Laravel, HTML, CSS, JavaScript, REST APIs</p>
-    </div>
-    <div class="stack-block stack-block-accent">
-      <div class="sb-no">viii.</div>
-      <h4>Currently exploring</h4>
-      <p>Multi-agent orchestration, evaluation frameworks, on-device LLMs</p>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section section-contact" id="contact">
-  <div class="contact-inner">
-    <div class="sec-num">№ 05</div>
-    <h2 class="contact-title">Let's <em>build</em><br/>something <em>good.</em></h2>
-    <p class="contact-lede">
-      Open to freelance contracts, full-time roles, and interesting collaborations
-      around LLMs, AI agents, and data systems.
-    </p>
-
-    <div class="contact-links">
-      <a href="mailto:bassoulahmed@gmail.com" class="cl">
-        <span class="cl-k">A.</span>
-        <span class="cl-l">Email</span>
-        <span class="cl-v">bassoulahmed@gmail.com</span>
-        <span class="cl-arr">↗</span>
-      </a>
-      <a href="https://www.linkedin.com/in/ahmed-bassoul" class="cl" target="_blank" rel="noopener">
-        <span class="cl-k">B.</span>
-        <span class="cl-l">LinkedIn</span>
-        <span class="cl-v">/in/ahmed-bassoul</span>
-        <span class="cl-arr">↗</span>
-      </a>
-      <a href="https://github.com/AhmedBassoul1" class="cl" target="_blank" rel="noopener">
-        <span class="cl-k">C.</span>
-        <span class="cl-l">GitHub</span>
-        <span class="cl-v">@AhmedBassoul1</span>
-        <span class="cl-arr">↗</span>
-      </a>
-      <a href="tel:+212770805909" class="cl">
-        <span class="cl-k">D.</span>
-        <span class="cl-l">Phone</span>
-        <span class="cl-v">+212 770 805 909</span>
-        <span class="cl-arr">↗</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-row">
-    <span>© MMXXVI · Ahmed Bassoul</span>
-    <span class="footer-mid">Casablanca, Morocco · 33.5731° N, 7.5898° W</span>
-    <span>Set in Fraunces &amp; Geist</span>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
