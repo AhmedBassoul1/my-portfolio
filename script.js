@@ -48,6 +48,25 @@ if ("IntersectionObserver" in window) {
   reveals.forEach((el) => el.classList.add("in"));
 }
 
+// ===== Marquee: freeze while hovering, resume on movement =====
+const marquee = document.querySelector(".marquee");
+const track = document.querySelector(".marquee-track");
+if (marquee && track) {
+  let idle;
+  const freeze = () => track.classList.add("frozen");
+  const thaw = () => track.classList.remove("frozen");
+  marquee.addEventListener("mouseenter", freeze);
+  marquee.addEventListener("mousemove", () => {
+    thaw();
+    clearTimeout(idle);
+    idle = setTimeout(freeze, 120); // re-freeze once the mouse stops
+  });
+  marquee.addEventListener("mouseleave", () => {
+    clearTimeout(idle);
+    thaw();
+  });
+}
+
 // ===== Active nav link on scroll =====
 const sections = [...document.querySelectorAll("section[id]")];
 const links = [...document.querySelectorAll(".nav-links a")];
