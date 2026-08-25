@@ -14,6 +14,13 @@ const i18n = {
     "nav.contact": "Contact",
     "nav.hire": "Hire me",
 
+    "nav.about_label": "01 / About",
+    "nav.experience_label": "02 / Experience",
+    "nav.freelance_label": "03 / Freelance projects",
+    "nav.projects_label": "04 / Lab notebook",
+    "nav.stack_label": "05 / Stack",
+    "nav.contact_label": "06 / Contact",
+
     "hero.badge": "Open to work · Freelance & Full-time",
     "hero.title_role": "Data Scientist",
     "hero.title_eng": "Machine Learning Engineer",
@@ -26,7 +33,7 @@ const i18n = {
 
     "about.title": "A bit about me",
     "about.lead": "I trained as a mathematician, fell for machine learning, and now spend my days teaching machines to read, retrieve, and reason.",
-    "about.education": "I hold a Master's in Information Systems & Intelligent Systems from INSEA Rabat, on top of a Bachelor's in Mathematics & Computer Science from FSDM Fez. I've worked across cybersecurity AI, business intelligence, and applied LLM engineering — happiest at the intersection of rigorous data work and practical product thinking.",
+    "about.education": "I hold a Master's in Information Systems &amp; Intelligent Systems from <strong>INSEA Rabat</strong>, on top of a Bachelor's in Mathematics &amp; Computer Science from <strong>FSDM Fez</strong>. I've worked across cybersecurity AI, business intelligence, and applied LLM engineering — happiest at the intersection of rigorous data work and practical product thinking.",
     "about.current": "Right now I'm freelancing as an AI Agent Developer, building production agent systems for clients who care about reliability over theatrics.",
     "about.card_education": "Education",
     "about.card_certs": "Certifications",
@@ -56,6 +63,12 @@ const i18n = {
     "exp.3.li1": "Market analysis and competitive benchmarking of similar applications.",
     "exp.3.li2": "User research and segmentation to define target personas.",
     "exp.3.li3": "Forecasted growth and synthesized a BI report for marketing & strategy.",
+    "exp.4.kind": "Final-Year Internship · Cybersecurity AI",
+    "exp.4.role": "UBA Engineer — DataProtect",
+    "exp.4.desc": "Behavioral anomaly detection for proactive threat hunting — combining classical ML, the ELK Stack, and an LLM in the loop.",
+    "exp.4.li1": "Developed a <strong>User Behavior Analytics (UBA)</strong> model for proactive threat detection.",
+    "exp.4.li2": "Built a log pipeline on the <strong>ELK Stack</strong> (Elasticsearch, Logstash, Kibana).",
+    "exp.4.li3": "Trained an <strong>LLM</strong> to flag subtle behavioral deviations — improved coverage, fewer false positives.",
 
     "fl.title": "Shipped for clients & users",
     "fl.lede": "Real products — full stack, from data pipeline to UI.",
@@ -123,6 +136,13 @@ const i18n = {
     "nav.contact": "Contact",
     "nav.hire": "Engagez-moi",
 
+    "nav.about_label": "01 / À propos",
+    "nav.experience_label": "02 / Expérience",
+    "nav.freelance_label": "03 / Projets freelance",
+    "nav.projects_label": "04 / Carnet de laboratoire",
+    "nav.stack_label": "05 / Stack",
+    "nav.contact_label": "06 / Contact",
+
     "hero.badge": "Disponible · Freelance & CDI",
     "hero.title_role": "Data Scientist",
     "hero.title_eng": "Ingénieur en Machine Learning",
@@ -135,7 +155,7 @@ const i18n = {
 
     "about.title": "À propos de moi",
     "about.lead": "Formé en mathématiques, tombé amoureux du machine learning, je passe mes journées à apprendre aux machines à lire, rechercher et raisonner.",
-    "about.education": "Titulaire d'un Master en Systèmes d'Information & Systèmes Intelligents de l'INSEA Rabat, et d'une Licence en Mathématiques & Informatique de la FSDM Fès. J'ai travaillé sur l'IA cybersecurité, l'intelligence d'affaires et le génie LLM appliqué — le plus épanoui à l'intersection d'un travail de données rigoureux et d'une vision produit pragmatique.",
+    "about.education": "Titulaire d'un Master en Systèmes d'Information &amp; Systèmes Intelligents de l'<strong>INSEA Rabat</strong>, et d'une Licence en Mathématiques &amp; Informatique de la <strong>FSDM Fès</strong>. J'ai travaillé sur l'IA cybersecurité, l'intelligence d'affaires et le génie LLM appliqué — le plus épanoui à l'intersection d'un travail de données rigoureux et d'une vision produit pragmatique.",
     "about.current": "Actuellement en freelance comme Développeur d'Agents IA, je construis des systèmes d'agents de production pour des clients qui privilégient la fiabilité à l'effet de spectacle.",
     "about.card_education": "Formation",
     "about.card_certs": "Certifications",
@@ -165,6 +185,12 @@ const i18n = {
     "exp.3.li1": "Analyse de marché et benchmark concurrentiel d'applications similaires.",
     "exp.3.li2": "Recherche utilisateur et segmentation pour définir les personas cibles.",
     "exp.3.li3": "Prévision de croissance et synthèse d'un rapport BI pour le marketing & la stratégie.",
+    "exp.4.kind": "Stage de fin d'études · IA Cybersécurité",
+    "exp.4.role": "Ingénieur UBA — DataProtect",
+    "exp.4.desc": "Détection d'anomalies comportementales pour la chasse proactive aux menaces — combinant ML classique, ELK Stack et un LLM dans la boucle.",
+    "exp.4.li1": "Développé un modèle <strong>User Behavior Analytics (UBA)</strong> pour la détection proactive des menaces.",
+    "exp.4.li2": "Construit un pipeline de logs sur l'<strong>ELK Stack</strong> (Elasticsearch, Logstash, Kibana).",
+    "exp.4.li3": "Entraîné un <strong>LLM</strong> pour repérer les déviations comportementales subtiles — meilleure couverture, moins de faux positifs.",
 
     "fl.title": "Livré pour des clients & utilisateurs",
     "fl.lede": "De vrais produits — full stack, du pipeline de données à l'interface.",
