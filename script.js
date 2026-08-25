@@ -1,4 +1,5 @@
 // ===== Theme toggle (persists in memory for the session) =====
+
 const root = document.documentElement;
 const themeBtn = document.getElementById("themeToggle");
 let theme = "dark";
@@ -82,3 +83,10 @@ const setActive = () => {
 };
 window.addEventListener("scroll", setActive, { passive: true });
 setActive();
+
+
+// ===== Initialize i18n =====
+if (window.__i18n) {
+  window.__i18n.applyTranslations();
+  window.__i18n.setupLangToggle();
+}
