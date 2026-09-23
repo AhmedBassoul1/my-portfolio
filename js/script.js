@@ -155,8 +155,8 @@ document.querySelectorAll(".faq-q").forEach((q) => {
     const isBot = form.querySelector('[name="botcheck"]').checked || Date.now() - loadedAt < MIN_HUMAN_SECONDS;
 
     if (isBot) {
-      // Don't reveal to the bot that it was caught — just look successful.
-      banner.textContent = dict["contact.success"] || "Success! Your message has been sent — I'll get back to you soon.";
+      // Don't reveal to the bot that it was caught . just look successful.
+      banner.textContent = dict["contact.success"] || "Success! Your message has been sent . I'll get back to you soon.";
       banner.classList.add("success");
       banner.hidden = false;
       form.reset();
@@ -169,7 +169,7 @@ document.querySelectorAll(".faq-q").forEach((q) => {
     try {
       if (isConfigured) {
         // Shape the notification email as: "<name> (<email>) sent you this
-        // message: "<message>"" — replaces the raw "message" field so the
+        // message: "<message>"" . replaces the raw "message" field so the
         // email Ahmed receives reads exactly that way.
         formData.set("message", `${name} (${email}) t'a envoyé ce message :\n\n"${message}"`);
         const res = await fetch("https://api.web3forms.com/submit", {
@@ -180,16 +180,16 @@ document.querySelectorAll(".faq-q").forEach((q) => {
         const json = await res.json();
         if (!res.ok || !json.success) throw new Error(json.message || "Request failed");
       } else {
-        // No Web3Forms key configured yet — fall back to opening the
+        // No Web3Forms key configured yet . fall back to opening the
         // visitor's email client with everything pre-filled, so the form
         // still works with zero setup. Swap in a real access_key on the
         // hidden input in index.html to switch to automatic inline delivery.
         const subject = encodeURIComponent(`Portfolio contact from ${name}`);
-        const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+        const body = encodeURIComponent(`${message}\n\n. ${name} (${email})`);
         window.location.href = `mailto:bassoulahmed@gmail.com?subject=${subject}&body=${body}`;
       }
 
-      banner.textContent = dict["contact.success"] || "Success! Your message has been sent — I'll get back to you soon.";
+      banner.textContent = dict["contact.success"] || "Success! Your message has been sent . I'll get back to you soon.";
       banner.classList.add("success");
       banner.hidden = false;
       form.reset();

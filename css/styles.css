@@ -269,7 +269,7 @@ button { font-family: inherit; }
 .resume-actions { display: flex; gap: 10px; margin-left: auto; }
 
 /* Styled paper replica of assets/resume-fr.pdf / resume-en.pdf (always light
-   — it's a document, not themed UI). Both language versions are in the DOM;
+   . it's a document, not themed UI). Both language versions are in the DOM;
    only the one matching <html lang> (kept in sync by i18n.js) is shown. */
 .resume-doc {
   position: relative; background: #ffffff; color: #18181b; border-radius: 12px;
